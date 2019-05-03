@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+.home img {
+  height: 50vh;
+  margin: 3%;
+}
+
+.nav-bar {
+  background: #1d425a;
+  box-shadow: 0 3px 5px grey;
+  margin: 0 0 1vh 0;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 4vh 1vw;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.movie-list h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-card {
+  cursor: pointer;
+  border: 1px solid black;
+  width: 35vw;
+  padding: 5vw;
+  margin: 1vh;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px grey;
+  background: rgb(202, 198, 198);
+  color: #1d425a;
+}
+
+.single-movie {
+  display: flex;
+}
+
+.info {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.movie-details {
+  margin: 1vh;
+}
+
+.add-movie {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-movie input {
+  margin: 5px;
+  padding: 2vh;
+}
+
+.button {
+  background: #2081c3;
+  color: white;
+  box-shadow: 0 2px 5px grey;
+  padding: 2vh 0;
+  margin: 2vh;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.button-delete {
+  background: red;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background: #1d425a;
+  padding: 1vw;
+  margin: 5vh 0 0 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}

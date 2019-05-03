@@ -1,0 +1,15 @@
+<div class="movie-card">
+  <h1 class="movie-details">Update movie</h1>
+  <form class="add-movie" action="/update" method="POST">
+    <input type="hidden" name="id" value="{{ movie._id }}">
+    <input type="text" name="title" placeholder="{{ movie.title }}" value="{{ movie.title }}">
+    <input type="text" name="genre" placeholder="{{ movie.genre }}" value="{{ movie.genre }}">
+    <input type="text" name="year" placeholder="{{ movie.year }}" value="{{ movie.year }}">
+    <input type="text" name="director" placeholder="{{ movie.director }}" value="{{ movie.director }}">
+    <input type="text" name="duration" placeholder="{{ movie.duration }}" value="{{ movie.duration }}">
+    <input type="text" name="rate" placeholder="{{ movie.rate }}" value="{{ movie.rate }}">
+    <div class="button-container">
+      <button class="button" type="submit">Update</button>
+    </div>
+  </form>
+</div>
