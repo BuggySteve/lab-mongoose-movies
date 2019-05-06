@@ -1,0 +1,18 @@
+<h1 class="movie-details">Add a celebrity!</h1>
+
+<div class="movie-card">
+  <form class="add-movie" action="add-celebrity" method="POST">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="occupation" placeholder="Occupation">
+    <input type="text" name="catch_phrase" placeholder="Catch phrase">
+    <select name="movies" multiple={{movies.length}}>
+      {{#each movies}}
+      <option value="{{_id}}">{{title}}</option>
+      {{/each}}
+    </select>
+    <input type="text" name="oscars" placeholder="Oscars">
+    <div class="button-container">
+      <button class="button" type="submit">Add</button>
+    </div>
+  </form>
+</div>

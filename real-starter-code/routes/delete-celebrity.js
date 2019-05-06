@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const Movie = require("../models/movie.js")
+const Celebrity = require("../models/celebrity")
 
-app.get("/delete", (req, res, next) => {
+app.get("/delete-celebrity", (req, res, next) => {
   let objectId = mongoose.Types.ObjectId(req.query.id);
-  Movie.deleteOne({ _id: objectId }, (err) => {
+  Celebrity.deleteOne({ _id: objectId }, (err) => {
     if (err) res.send("Error");
-    else res.redirect("/movies");
+    else res.redirect("/celebrities");
   });
 });
 

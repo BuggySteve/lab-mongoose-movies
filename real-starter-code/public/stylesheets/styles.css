@@ -83,6 +83,10 @@ body {
   width: 40%;
 }
 
+.button-search {
+  background: green;
+}
+
 .button-delete {
   background: red;
 }

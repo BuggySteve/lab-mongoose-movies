@@ -29,8 +29,16 @@ app.use("/", require("./routes/index"));
 app.use("/", require("./routes/movies"));
 app.use("/", require("./routes/single-movie"));
 app.use("/", require("./routes/add-movie"));
-app.use("/", require("./routes/delete"));
-app.use("/", require("./routes/update"));
+app.use("/", require("./routes/delete-movie"));
+app.use("/", require("./routes/update-movie"));
+app.use("/", require("./routes/search-movie"));
+app.use("/", require("./routes/celebrities"));
+app.use("/", require("./routes/add-celebrity"));
+app.use("/", require("./routes/delete-celebrity"));
+app.use("/", require("./routes/single-celebrity"));
+app.use("/", require("./routes/update-celebrity"));
+
+
 
 app.listen(3000, () => {
   console.log(".get and thou shalt receive");

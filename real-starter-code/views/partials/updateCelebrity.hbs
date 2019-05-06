@@ -1,0 +1,19 @@
+<div class="movie-card">
+  <h1 class="movie-details">Update celebrity</h1>
+  <form class="add-movie" action="/update-celebrity" method="POST">
+    <input type="hidden" name="id" value="{{ celebrity._id }}">
+    <input type="text" name="name" placeholder="{{ celebrity.name }}" value="{{ celebrity.name }}">
+    <input type="text" name="occupation" placeholder="{{ celebrity.occupation }}" value="{{ celebrity.occupation }}">
+    <input type="text" name="catch_phrase" placeholder="{{ celebrity.catch_phrase }}"
+      value="{{ celebrity.catch_phrase }}">
+    <select name="movies" multiple={{celebrity.movies.length}}>
+      {{#each celebrity.movies}}
+      <option selected value="{{_id}}">{{this.title}}</option>
+      {{/each}}
+    </select>
+    <input type="text" name="oscars" placeholder="{{ celebrity.oscars }}" value="{{ celebrity.oscars }}">
+    <div class="button-container">
+      <button class="button" type="submit">Update</button>
+    </div>
+  </form>
+</div>

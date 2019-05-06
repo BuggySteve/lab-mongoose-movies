@@ -8,6 +8,11 @@
     <input type="text" name="director" placeholder="Director">
     <input type="text" name="duration" placeholder="Duration">
     <input type="text" name="rate" placeholder="Rate">
+    <select name="celebrities" multiple={{celebrities.length}}>
+      {{#each celebrities}}
+      <option value="{{_id}}">{{name}}</option>
+      {{/each}}
+    </select>
     <div class="button-container">
       <button class="button" type="submit">Add</button>
     </div>

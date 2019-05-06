@@ -6,4 +6,5 @@
   <h3><span class="info">Director: </span> {{ movie.director }} </h3>
   <h3><span class="info">Duration: </span> {{ movie.duration }} </h3>
   <h3><span class="info">Rate: </span> {{ movie.rate }} </h3>
+  <h3><span class="info">Actors: </span> {{#each movie.actors}} <li>{{ this.name }}</li> {{/each}}</h3>
 </div>

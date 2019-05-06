@@ -9,7 +9,8 @@ const movieSchema = new Schema(
     director: { type: String },
     duration: { type: String },
     genre: { type: Array },
-    rate: { type: String }
+    rate: { type: String },
+    actors: [{ type: mongoose.Schema.Types.ObjectId, ref: "Celebrities" }]
   },
   { collection: "Movies" }
 );

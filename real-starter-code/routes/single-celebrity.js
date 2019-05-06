@@ -1,15 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const Movie = require("../models/movie.js")
+const Celebrity = require("../models/celebrity.js");
 
-app.get("/single-movie", (req, res, next) => {
+app.get("/single-celebrity", (req, res, next) => {
   let objectId = mongoose.Types.ObjectId(req.query.id);
-  Movie
+  Celebrity
     .findOne({ _id: objectId })
-    .populate("actors")
+    .populate("movies")
     .then((result) => {
-      res.render("singleMovie", { movie: result });
+      res.render("singleCelebrity", { celebrity: result });
     })
     .catch((err) => {
       res.send(err)

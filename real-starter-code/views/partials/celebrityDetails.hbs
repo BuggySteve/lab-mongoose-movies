@@ -1,0 +1,8 @@
+<div class="movie-card">
+  <h1 class="movie-details">Celebrity details</h1>
+  <h3><span class="info">Name: </span> {{ celebrity.name }} </h3>
+  <h3><span class="info">Occupation: </span> {{ celebrity.occupation }} </h3>
+  <h3><span class="info">Catch phrase: </span> "{{ celebrity.catch_phrase }}" </h3>
+  <h3><span class="info">Movies: </span> {{#each celebrity.movies}} <li>{{ this.title }}</li> {{/each}}</h3>
+  <h3><span class="info">Oscars: </span> {{ celebrity.oscars }} </h3>
+</div>

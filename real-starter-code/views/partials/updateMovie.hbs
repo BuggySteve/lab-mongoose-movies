@@ -8,6 +8,11 @@
     <input type="text" name="director" placeholder="{{ movie.director }}" value="{{ movie.director }}">
     <input type="text" name="duration" placeholder="{{ movie.duration }}" value="{{ movie.duration }}">
     <input type="text" name="rate" placeholder="{{ movie.rate }}" value="{{ movie.rate }}">
+    <select name="actors" multiple={{movie.actors.length}}>
+      {{#each movie.actors}}
+      <option value="{{_id}}">{{this.name}}</option>
+      {{/each}}
+    </select>
     <div class="button-container">
       <button class="button" type="submit">Update</button>
     </div>

@@ -1,0 +1,10 @@
+<div class="container row">
+  <div class="movie-card col-4 offset-4" onclick="location.href='/single-celebrity?id={{_id}}'">
+    <h3 class="title"><span class="info">Name: </span> {{ name }} </h3>
+    <h3 class="genre"><span class="info">Occupation: </span> {{ occupation }} </h3>
+    <h3 class="year"><span class="info">Catch phrase: </span> "{{ catch_phrase }}" </h3>
+    <a href="/delete-celebrity?id={{_id}}">
+      <button class="button button-delete" type="submit">Delete</button>
+    </a>
+  </div>
+</div>

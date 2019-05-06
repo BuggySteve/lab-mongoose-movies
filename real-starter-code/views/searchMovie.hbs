@@ -1,0 +1,19 @@
+<div class="movie-card">
+  <h1 class="movie-details">Search movie</h1>
+  <form class="add-movie" action="/update" method="POST">
+    <input type="hidden" name="id" value="{{ movie._id }}">
+    <label for="">Title:</label><input type="text" name="title" placeholder="{{ movie.title }}"
+      value="{{ movie.title }}">
+    <label for="">Genre:</label><input type="text" name="genre" placeholder="{{ movie.genre }}"
+      value="{{ movie.genre }}">
+    <label for="">Year:</label><input type="text" name="year" placeholder="{{ movie.year }}" value="{{ movie.year }}">
+    <label for="">Director:</label><input type="text" name="director" placeholder="{{ movie.director }}"
+      value="{{ movie.director }}">
+    <label for="">Duration:</label><input type="text" name="duration" placeholder="{{ movie.duration }}"
+      value="{{ movie.duration }}">
+    <label for="">Rate:</label><input type="text" name="rate" placeholder="{{ movie.rate }}" value="{{ movie.rate }}">
+    <div class="button-container">
+      <button class="button button-search" type="submit">Search</button>
+    </div>
+  </form>
+</div>

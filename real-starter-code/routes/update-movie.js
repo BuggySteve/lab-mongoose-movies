@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 const Movie = require("../models/movie.js");
 
-app.post("/update", (req, res, next) => {
+app.post("/update-movie", (req, res, next) => {
   let updateMovie = {
     title: req.body.title,
     year: req.body.year,
